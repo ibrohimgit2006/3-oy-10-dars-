@@ -5,7 +5,6 @@ header {
   height: 60px;
   justify-content: space-between;
   padding-top: 16px;
-  flex-basis: 300px;
 }
 
 .header_item h3 {
@@ -47,16 +46,13 @@ header {
 @media only screen and (max-width: 760px) {
   header {
     display: flex;
-    padding-inline: 24px;
+    align-items: center;
   }
   .header_nav {
     display: none;
   }
   .header_nav ul {
     display: none;
-  }
-  .header_icons {
-    width: 130px;
   }
   .header_icons img {
     gap: 16px;
@@ -66,7 +62,6 @@ header {
   width: 1120px;
   margin: auto;
   margin-top: 24px;
-  flex-basis: 300px;
 }
 
 .placeholder_img {
@@ -431,6 +426,73 @@ header {
     color: #141718;
   }
 }
+.arrivals {
+  margin-bottom: 12rem;
+  width: Fixed 1280px;
+  height: Hug 433px;
+}
+.arrivals__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4.8rem;
+}
+.arrivals__cards {
+  display: flex;
+  gap: clamp(1.6rem, 6vw, 2.4rem);
+}
+.arrivals__card {
+  flex-shrink: 0;
+  width: clamp(23.1rem, 48vw, 26.2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.arrivals__card .badges > div {
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0.4rem 1.4rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+.arrivals__card .badges .new {
+  background-color: #fff;
+}
+.arrivals__card .badges .discount {
+  background-color: green;
+  color: #fff;
+}
+.arrivals__card-top {
+  height: 350px;
+  background: url("./images/armchair-soft.png");
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.arrivals__card-top > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.arrivals__card-bottom {
+  font-weight: 600;
+}
+.arrivals__card-bottom .stars {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+.arrivals__card-bottom .item-name {
+  line-height: 1.6;
+}
+.arrivals__card-bottom .item-price del {
+  color: gray;
+  font-weight: 500;
+  margin-left: 1.2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
